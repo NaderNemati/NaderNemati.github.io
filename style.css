@@ -109,6 +109,7 @@ footer {
 .avatar-section {
     position: relative;
     text-align: center;
+    margin-top: 20px; /* Adjust as needed */
 }
 
 .profile-picture {
@@ -119,20 +120,18 @@ footer {
 }
 
 .contact-info {
-    display: flex;
-    flex-direction: column;
     position: absolute;
-    bottom: -30px; /* adjust as needed */
+    bottom: -40px; /* Adjust as needed */
     left: 50%;
     transform: translateX(-50%);
-    background-color: #333;
-    border-radius: 5px;
-    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact-info a {
     color: #fff;
     text-decoration: none;
     font-size: 24px;
-    margin: 5px 0;
+    margin: 5px;
 }
