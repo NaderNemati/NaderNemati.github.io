@@ -106,10 +106,16 @@ footer {
     font-family: 'Font Awesome 5 Free';
 }
 
-/* Additional styles for avatar and contact info */
 .avatar-section {
     position: relative;
     text-align: center;
+}
+
+.profile-picture {
+    width: 250px;
+    height: 250px;
+    border-radius: 80%;
+    margin-bottom: 1.0em;
 }
 
 .contact-info {
