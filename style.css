@@ -105,3 +105,28 @@ footer {
 .fab {
     font-family: 'Font Awesome 5 Free';
 }
+
+/* Additional styles for avatar and contact info */
+.avatar-section {
+    position: relative;
+    text-align: center;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: -30px; /* adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.contact-info a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    margin: 5px 0;
+}
