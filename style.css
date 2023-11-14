@@ -14,7 +14,6 @@ header {
     position: relative;
 }
 
-
 /* Updated styling for the profile picture */
 .profile-picture {
     width: 80px; /* Adjust the width as needed */
@@ -26,14 +25,27 @@ header {
     left: 10px; /* Added */
 }
 
-header h1 {
-    margin: 0;
-    margin-left: 100px; /* Added */
+.contact-info {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
 }
 
-header p {
+.contact-info a {
+    margin: 0 10px;
+    color: #333;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+h1 {
+    margin: 0;
+    margin-left: 100px;
+}
+
+p {
     margin: 0.5em 0;
-    margin-left: 100px; /* Added */
+    margin-left: 100px;
 }
 
 section {
@@ -94,4 +106,10 @@ footer {
     height: 150px; /* Adjust the height as needed */
     border-radius: 50%;
     margin-bottom: 0.5em;
+}
+
+/* Font Awesome icons (assuming you are using Font Awesome) */
+.fas,
+.fab {
+    font-family: 'Font Awesome 5 Free';
 }
