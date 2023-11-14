@@ -7,18 +7,33 @@ body {
 }
 
 header {
-    background-color: #007bff;
-    color: #fff;
+    background-color: #f4f4f4;
+    color: #333;
     text-align: center;
     padding: 1em;
+    position: relative;
+}
+
+
+/* Updated styling for the profile picture */
+.profile-picture {
+    width: 80px; /* Adjust the width as needed */
+    height: 80px; /* Adjust the height as needed */
+    border-radius: 50%;
+    margin-bottom: 0.5em;
+    position: absolute; /* Added */
+    top: 10px; /* Added */
+    left: 10px; /* Added */
 }
 
 header h1 {
     margin: 0;
+    margin-left: 100px; /* Added */
 }
 
 header p {
     margin: 0.5em 0;
+    margin-left: 100px; /* Added */
 }
 
 section {
