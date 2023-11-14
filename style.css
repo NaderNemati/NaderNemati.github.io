@@ -16,10 +16,10 @@ header {
 
 /* Updated styling for the profile picture */
 .profile-picture {
-    width: 80px; /* Adjust the width as needed */
-    height: 80px; /* Adjust the height as needed */
-    border-radius: 150%;
-    margin-bottom: 0.5em;
+    width: 250px; /* Adjust the width as needed */
+    height: 250px; /* Adjust the height as needed */
+    border-radius: 80%;
+    margin-bottom: 1.0em;
     position: absolute; /* Added */
     top: 10px; /* Added */
     left: 10px; /* Added */
@@ -33,19 +33,19 @@ header {
 
 .contact-info a {
     margin: 0 10px;
-    color: #333;
+    color: #fff;
     text-decoration: none;
     font-size: 24px;
 }
 
 h1 {
     margin: 0;
-    margin-left: 100px;
+    margin-left: 300px; /* Adjust the margin as needed */
 }
 
 p {
     margin: 0.5em 0;
-    margin-left: 100px;
+    margin-left: 300px; /* Adjust the margin as needed */
 }
 
 section {
@@ -98,14 +98,6 @@ footer {
     padding: 1em;
     background-color: #333;
     color: #fff;
-}
-
-/* Additional CSS for the profile picture */
-.profile-picture {
-    width: 250px; /* Adjust the width as needed */
-    height: 250px; /* Adjust the height as needed */
-    border-radius: 80%;
-    margin-bottom: 1.0em;
 }
 
 /* Font Awesome icons (assuming you are using Font Awesome) */
