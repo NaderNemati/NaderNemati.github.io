@@ -127,13 +127,13 @@ footer {
     display: flex;
     flex-direction: column; /* Display links in a column */
     align-items: center; /* Center items horizontally */
-    background-color: #333;
-    border-radius: 5px;
-    padding: 10px;
+    background-color: #555;
+    border-radius: 10px;
+    padding: 15px;
 }
 
 .contact-info a {
-    color: #fff;
+    color: #ggg;
     text-decoration: none;
     font-size: 24px;
     margin: 5px;
