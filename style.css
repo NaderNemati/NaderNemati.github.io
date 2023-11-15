@@ -7,12 +7,14 @@ body {
 }
 
 header {
-    background-color: #0066FF
+    background-color: #0066FF;
     color: #FFF;
     text-align: center;
     padding: 0.2em;
     position: relative;
+    padding-left: 2cm; /* Move text 2cm to the right */
 }
+
 
 /* Updated styling for the profile picture */
 .profile-picture {
