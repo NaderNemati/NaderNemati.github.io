@@ -121,8 +121,8 @@ footer {
 
 .contact-info {
     position: absolute;
-    top: 500px; /* Adjust as needed */
-    left: 20%;
+    top: 280px; /* Adjust as needed */
+    left: 5%;
     transform: translateX(-50%);
     display: flex;
     flex-direction: column; /* Display links in a column */
