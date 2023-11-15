@@ -37,7 +37,11 @@ header {
     color: #006699;
     text-decoration: none;
     font-size: 24px;
+    background-color: #006699; /* Set the background color */
+    padding: 8px 12px; /* Optional: Add padding for better box appearance */
+    border-radius: 5px; /* Optional: Add rounded corners to the boxes */
 }
+
 
 h1 {
     margin: 0;
