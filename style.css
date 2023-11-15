@@ -121,22 +121,23 @@ footer {
 
 .contact-info {
     position: absolute;
-    top: 280px; /* Adjust as needed */
-    left: 9%;
+    bottom: 0;
+    left: 50%;
     transform: translateX(-50%);
     display: flex;
-    flex-direction: column; /* Display links in a column */
-    align-items: center; /* Center items horizontally */
-    background-color: #333;
-    border-radius: 5px;
-    padding: 15px;
-    z-index: 1; /* Ensures contact info is above other elements */
+    justify-content: space-around;
+    width: 100%;
 }
 
-.contact-info a {
+.contact-item {
+    background-color: #333;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 5px;
+    display: inline-block;
+}
+.contact-item a {
     color: #fff;
     text-decoration: none;
     font-size: 24px;
-    margin: 5px;
-    display: block; /* Ensure each link occupies a full line */
 }
