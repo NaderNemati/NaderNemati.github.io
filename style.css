@@ -121,12 +121,15 @@ footer {
 
 .contact-info {
     position: absolute;
-    bottom: -40px; /* Adjust as needed */
+    bottom: -140px; /* Adjust as needed */
     left: 50%;
     transform: translateX(-50%);
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column; /* Display links in a column */
+    align-items: center; /* Center items horizontally */
+    background-color: #333;
+    border-radius: 5px;
+    padding: 10px;
 }
 
 .contact-info a {
@@ -134,4 +137,5 @@ footer {
     text-decoration: none;
     font-size: 24px;
     margin: 5px;
+    display: block; /* Ensure each link occupies a full line */
 }
