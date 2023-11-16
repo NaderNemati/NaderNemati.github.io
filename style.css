@@ -48,6 +48,9 @@ header {
   transition: color 0.3s ease-in-out;
 }
 
+.contact-info p {
+  color: #fff; /* Change the color to white */
+}
 .personal-info {
   flex-grow: 1; /* Allow the personal info to take remaining space */
 }
