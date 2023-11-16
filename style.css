@@ -19,13 +19,13 @@ header {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 20px; /* Adjust the gap between profile picture and info */
+  gap: 10px; /* Adjust the gap between profile picture and info */
 }
 
 .profile-info {
   display: flex;
   align-items: center;
-  gap: 10px; /* Adjust the gap between profile picture and contact info */
+  gap: 5px; /* Adjust the gap between profile picture and contact info */
 }
 
 .profile-picture {
