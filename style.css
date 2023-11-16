@@ -11,21 +11,19 @@ header {
   background-color: #333333;
   color: #FFF;
   text-align: center;
-  padding: 1.0em;
-  position: relative;
+  padding: 0.5em;
 }
 
 .avatar-section {
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 20px; /* Adjust the gap between profile picture and info */
+  align-items: flex-start;
+  gap: 20px;
 }
 
 .profile-info {
   display: flex;
   align-items: center;
-  gap: 10px; /* Adjust the gap between profile picture and contact info */
+  gap: 10px;
 }
 
 .profile-picture {
@@ -35,24 +33,8 @@ header {
   border: 5px solid #FFF;
 }
 
-.contact-info {
-  display: flex;
-  flex-direction: column;
-  gap: 5px; /* Adjust the gap between contact information */
-}
-
-.contact-info a {
-  color: #006699;
-  text-decoration: none;
-  font-size: 1.2em;
-  transition: color 0.3s ease-in-out;
-}
-
-.contact-info p {
-  color: #fff; /* Change the color to white */
-}
 .personal-info {
-  flex-grow: 1; /* Allow the personal info to take remaining space */
+  flex-grow: 1;
 }
 
 h1 {
@@ -63,6 +45,19 @@ h1 {
 p {
   margin: 0.3em 0;
   font-size: 1em;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.contact-info a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1em;
+  transition: color 0.3s ease-in-out;
 }
 
 section {
@@ -104,11 +99,7 @@ footer {
     height: 150px;
     margin-bottom: 0.5em;
   }
-
-  .contact-info {
-    margin-top: 5px;
-  }
-
+  
   h1 {
     font-size: 1.2em;
   }
