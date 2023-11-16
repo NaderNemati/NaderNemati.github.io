@@ -1,3 +1,4 @@
+/* CSS code */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
@@ -14,40 +15,51 @@ header {
   position: relative;
 }
 
+.avatar-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px; /* Adjust the gap between profile picture and info */
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Adjust the gap between profile picture and contact info */
+}
+
 .profile-picture {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  margin-bottom: 1em;
   border: 5px solid #FFF;
-  position: relative; /* Change absolute to relative */
 }
 
 .contact-info {
-  /* Remove absolute positioning */
   display: flex;
-  justify-content: center;
-  margin-top: 10px; /* Adjust margin as needed */
-  flex-direction: column; /* Stack contact info vertically */
-  align-items: center;
+  flex-direction: column;
+  gap: 5px; /* Adjust the gap between contact information */
 }
 
 .contact-info a {
-  margin: 5px; /* Add margin between contact links */
   color: #006699;
   text-decoration: none;
   font-size: 1.2em;
   transition: color 0.3s ease-in-out;
 }
 
+.personal-info {
+  flex-grow: 1; /* Allow the personal info to take remaining space */
+}
+
 h1 {
   margin: 0;
-  font-size: 1.5em; /* Adjust font size */
+  font-size: 1.5em;
 }
 
 p {
   margin: 0.3em 0;
-  font-size: 1em; /* Adjust font size */
+  font-size: 1em;
 }
 
 section {
