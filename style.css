@@ -11,7 +11,7 @@ header {
   background-color: #333333;
   color: #FFF;
   text-align: center;
-  padding: 0.5em;
+  padding: 1.0em;
   position: relative;
 }
 
@@ -19,13 +19,13 @@ header {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 10px; /* Adjust the gap between profile picture and info */
+  gap: 20px; /* Adjust the gap between profile picture and info */
 }
 
 .profile-info {
   display: flex;
   align-items: center;
-  gap: 5px; /* Adjust the gap between profile picture and contact info */
+  gap: 10px; /* Adjust the gap between profile picture and contact info */
 }
 
 .profile-picture {
