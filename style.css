@@ -1,118 +1,17 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
 }
 
 header {
-    background-color: #333333;
-    color: #FFF;
-    text-align: center;
-    padding: 0.5em;
-    position: relative;
-}
-
-
-/* Updated styling for the profile picture */
-.profile-picture {
-    width: 250px;
-    height: 250px;
-    border-radius: 80%;
-    margin-bottom: 1.0em;
-    position: absolute;
-    top: 145px;
-    left: 50px;
-}
-
-.contact-info {
-    display: flex;
-    justify-content: center;
-    margin-top: 15px;
-}
-
-.contact-info a {
-    margin: 0 10px;
-    color: #006699;
-    text-decoration: none;
-    font-size: 24px;
-
-}
-
-
-h1 {
-    margin: 0;
-    margin-left: 80px;
-}
-
-p {
-    margin: 0.5em 0;
-    margin-left: 80px;
-}
-
-section {
-    max-width: 700px;
-    margin: 2em auto;
-    padding: 1em;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-    color: #000066;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-li {
-    margin-bottom: 1em;
-}
-
-form {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-label {
-    display: block;
-    margin-bottom: 0.5em;
-    color: #333;
-}
-
-input, textarea {
-    width: 100%;
-    padding: 0.5em;
-    margin-bottom: 1em;
-    border: 1px solid #ccc;
-}
-
-input[type="submit"] {
-    background-color: #007bff;
-    color: #fff;
-    cursor: pointer;
-}
-
-footer {
-    text-align: center;
-    padding: 1em;
-    background-color: #333;
-    color: #fff;
-}
-
-/* Font Awesome icons (assuming you are using Font Awesome) */
-.fas,
-.fab {
-    font-family: 'Font Awesome 5 Free';
-}
-
-.avatar-section {
-    position: relative;
-    text-align: center;
-    margin-top: 15px; /* Adjust as needed */
+  background-color: #333333;
+  color: #FFF;
+  text-align: center;
+  padding: 0.5em;
+  position: relative;
 }
 
 .profile-picture {
@@ -121,46 +20,85 @@ footer {
   border-radius: 50%;
   margin-bottom: 1em;
   border: 5px solid #FFF;
-  /* Adjust positioning for smaller screens */
-  position: relative;
-  top: 0;
-  left: 0;
+  position: relative; /* Change absolute to relative */
 }
 
 .contact-info {
-    position: absolute;
-    bottom: -600px; /* Adjust as needed */
-    left: 8%;
-    transform: translateX(-50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  /* Remove absolute positioning */
+  display: flex;
+  justify-content: center;
+  margin-top: 10px; /* Adjust margin as needed */
+  flex-direction: column; /* Stack contact info vertically */
+  align-items: center;
 }
 
-.contact-item {
-    background-color: #333;
-    border-radius: 50%;
-    padding: 10px;
-    margin: 5px;
+.contact-info a {
+  margin: 5px; /* Add margin between contact links */
+  color: #006699;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: color 0.3s ease-in-out;
 }
 
-.contact-item a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
+h1 {
+  margin: 0;
+  font-size: 1.5em; /* Adjust font size */
+}
+
+p {
+  margin: 0.3em 0;
+  font-size: 1em; /* Adjust font size */
+}
+
+section {
+  max-width: 700px;
+  margin: 2em auto;
+  padding: 1em;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #000066;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 1em;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  background-color: #333;
+  color: #fff;
+}
+
+.fas,
+.fab {
+  font-family: 'Font Awesome 5 Free';
 }
 
 @media screen and (max-width: 768px) {
   .profile-picture {
     width: 150px;
     height: 150px;
-    /* Adjust position or margins */
     margin-bottom: 0.5em;
   }
 
-  /* Adjust spacing or layout for smaller screens */
   .contact-info {
-    margin-top: 10px;
+    margin-top: 5px;
+  }
+
+  h1 {
+    font-size: 1.2em;
+  }
+
+  p {
+    font-size: 0.9em;
   }
 }
