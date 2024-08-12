@@ -6,6 +6,53 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+V6aiKG5GK8l/.NXp8+taSiBnpYX2WH+861sVEXKDR2KTf1" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Nader Nemati - Academic Homepage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #f8f9fa;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .avatar-section {
+            display: flex;
+            align-items: center;
+        }
+        .profile-picture {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin-right: 20px;
+        }
+        .personal-info {
+            max-width: 400px;
+        }
+        .contact-info p, .contact-info a {
+            margin: 0;
+        }
+        section {
+            padding: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+        h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .project-entry, .education-entry {
+            margin-bottom: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #f8f9fa;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -17,12 +64,12 @@
                     <p>Machine Learning Specialist</p>
                 </div>
             </div>
-            <div class="contact-info">
-                <p>Email: <a href="mailto:naderr.nemati@gmail.com">naderr.nemati@gmail.com</a></p>
-                <p><a href="https://www.linkedin.com/in/nader-nemati-4a27b915b/" title="LinkedIn">LinkedIn</a></p>
-                <p><a href="https://github.com/NaderNemati" title="GitHub">GitHub</a></p>
-                <p><a href="https://www.researchgate.net/profile/Nader-Nemati" title="ResearchGate">ResearchGate</a></p>
-            </div>
+        </div>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:naderr.nemati@gmail.com">naderr.nemati@gmail.com</a></p>
+            <p><a href="https://www.linkedin.com/in/nader-nemati-4a27b915b/" title="LinkedIn">LinkedIn</a></p>
+            <p><a href="https://github.com/NaderNemati" title="GitHub">GitHub</a></p>
+            <p><a href="https://www.researchgate.net/profile/Nader-Nemati" title="ResearchGate">ResearchGate</a></p>
         </div>
     </header>
 
@@ -34,6 +81,36 @@
 
         <p>Explore my page to learn more about my research interests, projects, and publications.</p>
     </section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <h3>Machine Learning and Data Science</h3>
+    <ul>
+        <li><strong>Machine Learning:</strong> Python (Scikit-learn, XGBoost, SciPy)</li>
+        <li><strong>Deep Learning:</strong> TensorFlow, PyTorch, Keras</li>
+        <li><strong>Generative Neural Networks:</strong> Diffusion models for pix-to-pix image analysis</li>
+        <li><strong>Data Analytics:</strong> Exploratory data analysis, data quality management</li>
+        <li><strong>Data Visualization:</strong> Python (Matplotlib, Seaborn)</li>
+        <li><strong>Data Cleaning:</strong> Python (Pandas, NumPy)</li>
+        <li><strong>Statistical Analysis:</strong> R, SPSS</li>
+    </ul>
+
+    <h3>Computing and Programming</h3>
+    <ul>
+        <li><strong>Parallel Processing:</strong> openMPI, CUDA</li>
+        <li><strong>Cluster Computing:</strong> CSC (PUHTI, MAHTI)</li>
+        <li><strong>Programming Languages:</strong> Python, SQL, R, MATLAB, Java, C/C++, SAGE, JavaScript, HTML/CSS</li>
+        <li><strong>Cloud Services:</strong> Azure</li>
+    </ul>
+
+    <h3>Languages</h3>
+    <ul>
+        <li>English</li>
+        <li>French</li>
+        <li>Persian</li>
+    </ul>
+</section>
+
 
     <section id="news">
         <h2>News</h2>
@@ -77,6 +154,23 @@
             <li>N. Nemati, M. Kaisti, T. Koivisto, (2023). "Enhancing ECG Multi-label Cardiac Abnormality Detection Classification Using ResNet18 and Data Augmentation." <em>(To be submitted)</em></li>
             <!-- Add more publication entries as needed -->
         </ul>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="education-entry">
+            <h3>MSc in Computer Science</h3>
+            <p>University of Turku, Finland</p>
+        </div>
+        <div class="education-entry">
+            <h3>BSc in Mathematics</h3>
+            <p>Isfahan University of Technology, Isfahan, Iran</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out to me via email at <a href="mailto:naderr.nemati@gmail.com">naderr.nemati@gmail.com</a> or connect with me on LinkedIn for any professional inquiries or collaboration opportunities.</p>
     </section>
 
     <footer>
