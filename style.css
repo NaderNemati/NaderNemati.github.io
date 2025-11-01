@@ -30,7 +30,7 @@ header {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 
     /* background image */
-    background-image: url('img/header-bg.jpg'); /* <-- change to your image path */
+    background-image: url('https://media.licdn.com/dms/image/v2/D4D16AQG9614XhdIbEQ/profile-displaybackgroundimage-shrink_350_1400/profile-displaybackgroundimage-shrink_350_1400/0/1706201360230?e=1763596800&v=beta&t=jOad1Bj7VeEIoRi_re9pYllxmovxDbAwLnSE-gktHgI'); /* <-- change to your image path */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -190,3 +190,4 @@ footer {
         padding: 1em;
     }
 }
+
