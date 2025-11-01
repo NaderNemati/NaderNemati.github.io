@@ -18,16 +18,39 @@ p {
     font-size: 1em;
 }
 
-/* Header Styles */
+/* Header Styles (with background image + overlay) */
 header {
-    background-color: #333333;
+    position: relative;
     color: #FFF;
     text-align: center;
-    padding: 1em;
+    padding: 3.5em 1em; /* taller hero feel */
     display: flex;
     flex-direction: column;
     align-items: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+    /* background image */
+    background-image: url('img/header-bg.jpg'); /* <-- change to your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll; /* set to 'fixed' for parallax */
+    background-color: #333333;     /* fallback color */
+}
+
+/* dark overlay to keep text readable */
+header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 0;
+}
+
+/* keep header content above overlay */
+header > * {
+    position: relative;
+    z-index: 1;
 }
 
 .avatar-section {
@@ -83,6 +106,11 @@ h1 {
 
 .contact-info a:hover {
     color: #ffcc00;
+}
+
+/* slight text shadow for readability on busy images */
+header h1, header p, .contact-info a {
+    text-shadow: 0 1px 2px rgba(0,0,0,0.5);
 }
 
 /* Section Styles */
