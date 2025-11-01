@@ -1,4 +1,6 @@
-/* General Styles */
+/* =========================
+   Global / Base Styles
+   ========================= */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -18,46 +20,54 @@ p {
     font-size: 1em;
 }
 
-/* Header Styles (with background image + overlay) */
+/* =========================
+   Header (Hero) with BG Image + Overlay
+   Works with your existing HTML (no class needed)
+   ========================= */
 header {
     position: relative;
     color: #FFF;
     text-align: center;
-    padding: 3.5em 1em; /* taller hero feel */
+    padding: 3.5em 1em;                 /* taller hero feel */
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 
-    /* background image */
+    /* Background image (replace URL with your working link or local path) */
     background-image: url('https://images.unsplash.com/photo-1503264116251-35a269479413?w=1600');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: scroll; /* set to 'fixed' for parallax */
-    background-color: #333333;     /* fallback color */
+    background-attachment: scroll;      /* set to 'fixed' for parallax */
+    background-color: #333333;          /* fallback color */
 }
 
-/* dark overlay to keep text readable */
+/* Dark overlay to keep text readable on any photo */
 header::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.55);
+    background: rgba(0, 0, 0, 0.4);      /* slightly lighter than 0.55 to avoid looking black */
     z-index: 0;
 }
 
-/* keep header content above overlay */
+/* Keep header content above overlay */
 header > * {
     position: relative;
     z-index: 1;
 }
 
+/* =========================
+   Header Content Blocks
+   ========================= */
 .avatar-section {
     display: flex;
     align-items: center;
     gap: 20px;
     flex-wrap: wrap;
+    justify-content: center;            /* centers on desktop too */
+    max-width: 1100px;
 }
 
 .profile-picture {
@@ -89,6 +99,7 @@ h1 {
     margin-bottom: 0.5em;
 }
 
+/* Contact / Links under header */
 .contact-info {
     display: flex;
     flex-direction: column;
@@ -108,12 +119,16 @@ h1 {
     color: #ffcc00;
 }
 
-/* slight text shadow for readability on busy images */
-header h1, header p, .contact-info a {
+/* Slight text shadow for readability on busy images */
+header h1,
+header p,
+.contact-info a {
     text-shadow: 0 1px 2px rgba(0,0,0,0.5);
 }
 
-/* Section Styles */
+/* =========================
+   Sections
+   ========================= */
 section {
     max-width: 800px;
     margin: 2em auto;
@@ -150,7 +165,9 @@ li a:hover {
     color: #ff6600;
 }
 
-/* Footer Styles */
+/* =========================
+   Footer
+   ========================= */
 footer {
     text-align: center;
     padding: 1em;
@@ -160,13 +177,21 @@ footer {
     border-top: 1px solid #444;
 }
 
-/* Icon Styles */
+/* =========================
+   Icons
+   ========================= */
 .fas,
 .fab {
     font-family: 'Font Awesome 5 Free';
 }
 
-/* Responsive Design */
+/* =========================
+   Responsive
+   ========================= */
+@media screen and (max-width: 900px) {
+    h1 { font-size: 1.75em; }
+}
+
 @media screen and (max-width: 768px) {
     .profile-picture {
         width: 150px;
@@ -190,5 +215,3 @@ footer {
         padding: 1em;
     }
 }
-
-
