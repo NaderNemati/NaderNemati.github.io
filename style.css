@@ -35,7 +35,7 @@ header {
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 
     /* Background image (replace URL with your working link or local path) */
-    background-image: url('https://github.com/NaderNemati/NaderNemati.github.io/blob/main/photo_2025-12-01_00-49-42.jpg');
+    background-image: url('https://raw.githubusercontent.com/NaderNemati/NaderNemati.github.io/refs/heads/main/photo_2025-12-01_00-49-42.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -215,4 +215,5 @@ footer {
         padding: 1em;
     }
 }
+
 
