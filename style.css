@@ -28,7 +28,7 @@ body {
     margin-top: 20px;
     padding-top: 18px;
     padding-bottom: 18px;
-    background-image: linear-gradient(90deg, rgba(255,255,255,0.93), rgba(255,255,255,0.76), rgba(255,255,255,0.48)), url("photo_2025-12-01_00-49-42.jpg");
+    background-image: linear-gradient(90deg, rgba(255,255,255,0.90), rgba(255,255,255,0.68), rgba(255,255,255,0.36)), url("photo_2025-12-01_00-49-42.jpg");
     background-size: cover;
     background-position: center;
     border-radius: 6px;
@@ -63,7 +63,7 @@ h1 {
 h2 {
     font-weight: normal;
     font-style: italic;
-    color: #999;
+    color: #666;
     font-size: 18px;
     padding: 0;
     margin: 5px 0 10px 0;
