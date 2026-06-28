@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="Computer Science PhD entrance exam rank">
+  <rect width="96" height="96" rx="8" fill="#fffaf0"/>
+  <path d="M24 73c-8-9-10-23-3-35M72 73c8-9 10-23 3-35" fill="none" stroke="#c59b21" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="48" cy="45" r="24" fill="#f8c64e" stroke="#b98512" stroke-width="4"/>
+  <text x="48" y="43" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#423000">#4</text>
+  <text x="48" y="58" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#423000">TOP 1%</text>
+  <rect x="30" y="67" width="36" height="12" rx="2" fill="#2b6cb0"/>
+  <text x="48" y="76" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="#fff">CS PhD</text>
+</svg>

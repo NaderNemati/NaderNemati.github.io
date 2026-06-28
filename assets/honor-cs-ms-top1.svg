@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="Computer Science MSc national entrance exam top one percent">
+  <rect width="96" height="96" rx="8" fill="#f6fbf9"/>
+  <rect x="23" y="20" width="50" height="50" rx="7" fill="#0f766e"/>
+  <rect x="34" y="31" width="28" height="28" rx="3" fill="#ccfbf1"/>
+  <g stroke="#0f766e" stroke-width="3">
+    <path d="M28 14v10M40 14v10M56 14v10M68 14v10M28 70v10M40 70v10M56 70v10M68 70v10M13 29h10M13 42h10M13 56h10M73 29h10M73 42h10M73 56h10"/>
+  </g>
+  <text x="48" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#0f766e">CS</text>
+  <text x="48" y="87" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#134e4a">TOP 1%</text>
+</svg>
