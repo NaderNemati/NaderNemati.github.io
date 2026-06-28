@@ -117,6 +117,9 @@ hr {
     padding-bottom: 20px;
     color: #222;
 }
+.desc p {
+    margin: 0 0 8px 0;
+}
 .entry-dot {
     position: absolute;
     top: 0px;
