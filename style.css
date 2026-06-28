@@ -101,8 +101,11 @@ hr {
 }
 .ico img {
     border-radius: 5px;
-    width: 100%;
-    max-width: 80px;
+    width: 80px;
+    height: 58px;
+    object-fit: contain;
+    object-position: center;
+    background-color: #fff;
     margin-left: 10px;
 }
 .desc {
