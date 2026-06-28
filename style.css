@@ -1,219 +1,223 @@
-/* =========================
-   Global / Base Styles
-   ========================= */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
+:root {
+  --text: #111;
+  --muted: #555;
+  --faint: #777;
+  --line: #ddd;
+  --link: #1772d0;
+  --link-hover: #f09228;
+  --paper: #fff;
 }
 
-h1, h2, h3 {
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--text);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 16px;
+  line-height: 1.42;
+}
+
+.page {
+  width: min(100%, 860px);
+  margin: 0 auto;
+  padding: 34px 22px 44px;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--link-hover);
 }
 
 p {
-    margin: 0.3em 0;
-    font-size: 1em;
+  margin: 0 0 11px;
 }
 
-/* =========================
-   Header (Hero) with BG Image + Overlay
-   Works with your existing HTML (no class needed)
-   ========================= */
-header {
-    position: relative;
-    color: #FFF;
-    text-align: center;
-    padding: 3.5em 1em;                 /* taller hero feel */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-
-    /* Background image (replace URL with your working link or local path) */
-    background-image: url('https://raw.githubusercontent.com/NaderNemati/NaderNemati.github.io/refs/heads/main/photo_2025-12-01_00-49-42.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;      /* set to 'fixed' for parallax */
-    background-color: #333333;          /* fallback color */
+.intro {
+  display: grid;
+  grid-template-columns: 170px 1fr;
+  gap: 28px;
+  align-items: center;
+  margin: 8px 0 28px;
 }
 
-/* Dark overlay to keep text readable on any photo */
-header::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.4);      /* slightly lighter than 0.55 to avoid looking black */
-    z-index: 0;
-}
-
-/* Keep header content above overlay */
-header > * {
-    position: relative;
-    z-index: 1;
-}
-
-/* =========================
-   Header Content Blocks
-   ========================= */
-.avatar-section {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;            /* centers on desktop too */
-    max-width: 1100px;
-}
-
-.profile-picture {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border: 5px solid #FFF;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out;
-}
-
-.profile-picture:hover {
-    transform: scale(1.05);
-}
-
-.profile-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-
-.personal-info {
-    text-align: center;
+.portrait {
+  width: 170px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 h1 {
-    font-size: 2em;
-    margin-bottom: 0.5em;
+  margin: 0 0 4px;
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 1.1;
 }
 
-/* Contact / Links under header */
-.contact-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-    margin-top: 0.5em;
+.role {
+  margin-bottom: 12px;
+  color: var(--muted);
+  font-size: 17px;
 }
 
-.contact-info a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 0.9em;
-    transition: color 0.3s ease-in-out;
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 10px;
+  margin-top: 10px;
 }
 
-.contact-info a:hover {
-    color: #ffcc00;
+.links a:not(:last-child)::after {
+  content: " /";
+  color: var(--faint);
 }
 
-/* Slight text shadow for readability on busy images */
-header h1,
-header p,
-.contact-info a {
-    text-shadow: 0 1px 2px rgba(0,0,0,0.5);
-}
-
-/* =========================
-   Sections
-   ========================= */
 section {
-    max-width: 800px;
-    margin: 2em auto;
-    padding: 1.5em;
-    background-color: #fff;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+  margin: 26px 0;
 }
 
 h2 {
-    color: #000066;
-    margin-bottom: 0.5em;
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 0.3em;
+  margin: 0 0 12px;
+  font-size: 19px;
+  font-weight: 400;
+  text-transform: lowercase;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
+h3 {
+  margin: 0 0 4px;
+  font-size: 16px;
+  font-weight: 700;
 }
 
-li {
-    margin-bottom: 1em;
-    line-height: 1.4;
+.compact-list,
+.bibliography {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-li a {
-    color: #0066cc;
-    text-decoration: none;
-    transition: color 0.3s ease-in-out;
+.compact-list li,
+.bibliography li {
+  margin-bottom: 9px;
 }
 
-li a:hover {
-    color: #ff6600;
+.date {
+  display: inline-block;
+  min-width: 66px;
+  color: var(--faint);
 }
 
-/* =========================
-   Footer
-   ========================= */
+.paper {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 18px;
+  align-items: start;
+  margin: 0 0 18px;
+}
+
+.paper img,
+.thumb-text {
+  width: 150px;
+  height: 96px;
+  border-radius: 2px;
+  border: 1px solid var(--line);
+  object-fit: cover;
+  background: #f5f5f5;
+}
+
+.thumb-text {
+  display: grid;
+  place-items: center;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  letter-spacing: 0;
+}
+
+.meta {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.timeline p {
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.timeline span {
+  color: var(--faint);
+}
+
+strong {
+  font-weight: 700;
+}
+
 footer {
-    text-align: center;
-    padding: 1em;
-    background-color: #333;
-    color: #fff;
-    font-size: 0.9em;
-    border-top: 1px solid #444;
+  margin-top: 34px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+  color: var(--faint);
+  font-size: 14px;
 }
 
-/* =========================
-   Icons
-   ========================= */
-.fas,
-.fab {
-    font-family: 'Font Awesome 5 Free';
+@media (max-width: 680px) {
+  .page {
+    padding: 24px 16px 36px;
+  }
+
+  .intro {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    text-align: left;
+  }
+
+  .portrait {
+    width: 132px;
+    height: 132px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .paper {
+    grid-template-columns: 112px 1fr;
+    gap: 12px;
+  }
+
+  .paper img,
+  .thumb-text {
+    width: 112px;
+    height: 78px;
+  }
+
+  .timeline p {
+    grid-template-columns: 58px 1fr;
+  }
 }
 
-/* =========================
-   Responsive
-   ========================= */
-@media screen and (max-width: 900px) {
-    h1 { font-size: 1.75em; }
+@media (max-width: 430px) {
+  body {
+    font-size: 15px;
+  }
+
+  .paper {
+    grid-template-columns: 1fr;
+  }
+
+  .paper img,
+  .thumb-text {
+    width: 100%;
+    height: 130px;
+  }
 }
-
-@media screen and (max-width: 768px) {
-    .profile-picture {
-        width: 150px;
-        height: 150px;
-    }
-    
-    h1 {
-        font-size: 1.5em;
-    }
-
-    p {
-        font-size: 0.95em;
-    }
-
-    .avatar-section {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    section {
-        padding: 1em;
-    }
-}
-
-
