@@ -14,46 +14,93 @@ body {
     padding-left: 15px;
     padding-right: 15px;
 }
+
 @media (min-width: 992px) {
     .container {
         width: 970px;
-     }
+    }
 }
+
 .row {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
 }
 
+
+/* =========================
+   HEADER
+   ========================= */
+
 #dhead {
     margin-top: 20px;
     padding-top: 18px;
     padding-bottom: 18px;
-    background-image: linear-gradient(90deg, rgba(255,255,255,0.90), rgba(255,255,255,0.68), rgba(255,255,255,0.36)), url("photo_2025-12-01_00-49-42.jpg");
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,0.90),
+            rgba(255,255,255,0.68),
+            rgba(255,255,255,0.36)
+        ),
+        url("photo_2025-12-01_00-49-42.jpg");
+
     background-size: cover;
     background-position: center;
     border-radius: 6px;
 }
+
 #dpic {
     grid-column: span 6;
     text-align: right;
 }
+
 #ddesc {
     padding-top: 40px;
     padding-left: 20px;
     grid-column: span 6;
 }
+
+
+/* Avatar */
+#dpic img {
+    width: 240px;
+    height: 240px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    /*
+       Move the crop upward so that more of the head
+       is visible inside the circular avatar.
+    */
+    object-position: center 20%;
+
+    display: inline-block;
+}
+
+
 @media (max-width: 991px) {
+
     #dpic {
-      grid-column: span 12;
-      text-align: center;
+        grid-column: span 12;
+        text-align: center;
     }
+
     #ddesc {
-      grid-column: span 12;
-      padding-top: 20px;
-      padding-left: 0;
-      text-align: center;
+        grid-column: span 12;
+        padding-top: 20px;
+        padding-left: 0;
+        text-align: center;
     }
 }
+
+
+/* =========================
+   HEADINGS
+   ========================= */
+
 h1 {
     font-size: 34px;
     font-weight: normal;
@@ -61,6 +108,7 @@ h1 {
     margin: 0;
     color: #111;
 }
+
 h2 {
     font-weight: normal;
     font-style: italic;
@@ -69,258 +117,459 @@ h2 {
     padding: 0;
     margin: 5px 0 10px 0;
 }
+
 @media (min-width: 992px) {
     h2 {
         max-width: 340px;
     }
 }
-#dpic img {
-    width: 240px;
-    height: 240px;
-    border-radius: 120px;
-    object-fit: cover;
-}
+
+
+/* =========================
+   SOCIAL ICONS
+   ========================= */
+
 .iico {
     width: 40px;
     height: 40px;
 }
+
+
+/* =========================
+   DIVIDER
+   ========================= */
+
 hr {
     height: 1px;
-    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
-    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
-    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
-    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+
+    background-image:
+        -webkit-linear-gradient(
+            left,
+            rgba(0,0,0,0),
+            rgba(0,0,0,0.75),
+            rgba(0,0,0,0)
+        );
+
+    background-image:
+        -moz-linear-gradient(
+            left,
+            rgba(0,0,0,0),
+            rgba(0,0,0,0.75),
+            rgba(0,0,0,0)
+        );
+
+    background-image:
+        -ms-linear-gradient(
+            left,
+            rgba(0,0,0,0),
+            rgba(0,0,0,0.75),
+            rgba(0,0,0,0)
+        );
+
+    background-image:
+        -o-linear-gradient(
+            left,
+            rgba(0,0,0,0),
+            rgba(0,0,0,0.75),
+            rgba(0,0,0,0)
+        );
+
     padding: 0;
-    margin: 20px 0px 20px 0px;
+    margin: 20px 0 20px 0;
     border: 0;
 }
+
+
+/* =========================
+   HISTORY / EXPERIENCE
+   ========================= */
+
 .ico {
     grid-column: span 1;
     vertical-align: top;
+
     border-left: 2px solid #b8b8b8;
+
     position: relative;
 }
+
 .ico img {
     border-radius: 5px;
+
     width: 80px;
     height: 58px;
+
     object-fit: contain;
     object-position: center;
+
     background-color: #fff;
+
     margin-left: 10px;
 }
+
 .desc {
     grid-column: span 10;
     vertical-align: top;
+
     font-size: 17px;
+
     padding-left: 20px;
     padding-bottom: 20px;
+
     color: #222;
 }
+
 .desc p {
     margin: 0 0 8px 0;
 }
+
 .entry-dot {
     position: absolute;
-    top: 0px;
+
+    top: 0;
     left: -8px;
+
     width: 10px;
     height: 10px;
+
     border-radius: 7px;
+
     background-color: #b8b8b8;
+
     border: 2px solid white;
 }
+
 .timespan {
     grid-column: span 1;
+
     font-size: 14px;
     text-align: right;
+
     padding-right: 5px;
+
     color: #777;
 }
+
+
+/* =========================
+   SECTION TITLES
+   ========================= */
+
 .ctitle {
     font-size: 36px;
+
     margin-bottom: 20px;
     margin-top: 40px;
+
     color: #111;
 }
+
+
+/* =========================
+   SECTION BACKGROUNDS
+   ========================= */
+
 .section-band {
     background-color: #e8e8e8;
+
     padding-top: 1px;
     margin-top: 10px;
 }
+
 .section-band-bottom {
     padding-bottom: 30px;
     margin-top: 50px;
 }
+
+
+/* =========================
+   FEATURED RESEARCH CARDS
+   ========================= */
+
 .cards-row {
     grid-column-gap: 10px;
     grid-row-gap: 10px;
+
     padding-bottom: 30px;
 }
+
 .card {
     grid-column: span 3;
+
     vertical-align: top;
+
     background-color: white;
+
     border: 1px solid #c9c9c9;
     border-radius: 3px;
+
     padding: 5px 5px 10px 5px;
 }
+
 @media (max-width: 991px) {
+
     .card {
         grid-column: span 6;
     }
+
     .cards-row {
         grid-column-gap: 5px;
         grid-row-gap: 5px;
     }
 }
+
 .card img {
     border-radius: 5px;
+
     width: 100%;
     height: 150px;
+
     object-fit: cover;
+
     display: block;
 }
+
 .cdesc {
     min-height: 44px;
+
     vertical-align: top;
+
     margin-bottom: 10px;
+
     font-size: 15px;
+
     color: #222;
 }
+
 @media (max-width: 768px) {
+
     .cdesc {
         font-size: 14px;
         padding-bottom: 10px;
     }
 }
+
+
+/* =========================
+   PROJECTS
+   ========================= */
+
 .project {
     margin-bottom: 10px;
     padding-bottom: 10px;
+
     border-bottom: 1px solid #d4d4d4;
 }
+
 .pdesc {
     color: #222;
 }
+
 .pico {
     float: left;
     margin-right: 10px;
 }
+
 .pend {
     clear: both;
 }
+
 .pico img {
     height: 80px;
     width: 80px;
+
     object-fit: cover;
+
     border-radius: 5px;
     border: 1px solid #777;
 }
+
+
+/* =========================
+   PUBLICATIONS
+   ========================= */
+
 .pub {
     font-size: 14px;
+
     border-left: 4px solid #777;
-    padding: 2px 0px 2px 10px;
+
+    padding: 2px 0 2px 10px;
+
     margin-bottom: 10px;
 }
+
 .pub-title {
     display: inline;
     color: #222;
 }
+
 .pub-venue {
     display: inline;
     color: #067300;
 }
+
 .pub-authors {
     display: block;
     color: #222;
 }
+
+
+/* =========================
+   LISTS
+   ========================= */
+
 .nodot {
     list-style-type: none;
     padding-left: 0;
 }
+
 .nodot li {
     margin-bottom: 6px;
 }
+
+
+/* =========================
+   SKILLS
+   ========================= */
+
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
     gap: 14px 18px;
+
     padding-bottom: 4px;
 }
+
 .skill-group {
     background-color: #fff;
+
     border-left: 4px solid #777;
+
     padding: 12px 14px 13px 14px;
 }
+
 .skill-title {
     color: #111;
+
     font-size: 18px;
     font-weight: bold;
+
     margin-bottom: 8px;
 }
+
 .skill-tags {
     display: flex;
     flex-wrap: wrap;
+
     gap: 6px;
 }
+
 .skill-tags span {
     background-color: #f1f1f1;
+
     border: 1px solid #cfcfcf;
     border-radius: 3px;
+
     color: #222;
+
     font-size: 14px;
     line-height: 1.2;
+
     padding: 4px 7px;
 }
+
+
+/* =========================
+   ADDITIONAL
+   ========================= */
+
 .misc-list {
     padding-left: 10px;
 }
+
+
+/* =========================
+   LINKS
+   ========================= */
+
 a {
     color: #0b63b6;
     text-decoration: none;
 }
+
 a:hover {
     color: #c85f00;
 }
+
 b {
     font-weight: bold;
 }
+
+
+/* =========================
+   TABLET / MOBILE
+   ========================= */
+
 @media (max-width: 768px) {
+
     body {
         font-size: 15px;
     }
+
     .timespan {
         grid-column: span 2;
     }
+
     .ico {
         grid-column: span 2;
     }
+
     .desc {
         grid-column: span 8;
+
         padding-left: 14px;
     }
+
     .ico img {
         max-width: 52px;
+
         margin-left: 8px;
     }
+
     .skills-grid {
         grid-template-columns: 1fr;
+
         gap: 10px;
     }
+
     .skill-title {
         font-size: 17px;
     }
+
     .skill-tags span {
         font-size: 13px;
     }
 }
+
+
+/* =========================
+   SMALL PHONES
+   ========================= */
+
 @media (max-width: 520px) {
+
     .timespan {
         font-size: 12px;
     }
+
     .desc {
         font-size: 15px;
     }
+
     .card {
         grid-column: span 12;
     }
