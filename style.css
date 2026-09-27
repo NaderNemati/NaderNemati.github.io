@@ -75,7 +75,7 @@ body {
        Move the crop upward so that more of the head
        is visible inside the circular avatar.
     */
-    object-position: center 15%;
+    object-position: center 25%;
 
     display: inline-block;
 }
