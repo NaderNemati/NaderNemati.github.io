@@ -1,0 +1,111 @@
+/* Conference poster access banner — intentionally separate from existing style.css.
+   The printed QR code already points to https://nadernemati.github.io/.
+   Visitors will see this link immediately on arrival; no redirect or QR change is needed.
+*/
+
+.poster-access-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 22px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background: linear-gradient(115deg, #eef9fc 0%, #f7fbfc 100%);
+    border: 1px solid #abd2dc;
+    border-left: 5px solid #0d788f;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(13, 65, 82, 0.06);
+}
+
+.poster-access-copy {
+    flex: 1 1 0;
+    min-width: 0;
+}
+
+.poster-access-eyebrow {
+    margin: 0 0 4px;
+    color: #08758a;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.035em;
+}
+
+/* Override the site's generic italic h2 style inside this banner only. */
+.poster-access-banner h2.poster-access-heading {
+    margin: 0 0 6px;
+    padding: 0;
+    max-width: none;
+    color: #173c58;
+    font-size: 22px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.2;
+}
+
+.poster-access-summary {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #344d60;
+}
+
+.poster-access-banner .poster-access-button {
+    flex: 0 0 auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 44px;
+    padding: 10px 18px;
+    box-sizing: border-box;
+    background: #0b7187;
+    border: 2px solid #0b7187;
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background-color 120ms ease, border-color 120ms ease;
+}
+
+.poster-access-banner .poster-access-button:hover,
+.poster-access-banner .poster-access-button:focus-visible {
+    background: #075366;
+    border-color: #075366;
+    color: #fff;
+    text-decoration: none;
+}
+
+.poster-access-banner .poster-access-button:focus-visible {
+    outline: 3px solid #f3a750;
+    outline-offset: 3px;
+}
+
+.pub-poster-link { margin: 7px 0; font-size: 14px; font-weight: 700; }
+.pub-poster-link a { color: #086d80; }
+.pub-poster-link a:hover { color: #c85f00; }
+
+@media (max-width: 700px) {
+    .poster-access-banner {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        margin-top: 8px;
+    }
+
+    .poster-access-banner h2.poster-access-heading { font-size: 19px; }
+    .poster-access-eyebrow { font-size: 12px; }
+    .poster-access-summary { font-size: 14px; }
+    .poster-access-banner .poster-access-button { width: 100%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .poster-access-banner .poster-access-button { transition: none; }
+}
