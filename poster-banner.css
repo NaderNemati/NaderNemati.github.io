@@ -1,22 +1,28 @@
-/* Conference poster access banner — intentionally separate from existing style.css.
-   The printed QR code already points to https://nadernemati.github.io/.
-   Visitors will see this link immediately on arrival; no redirect or QR change is needed.
+/* Larger conference poster banner.
+   This stylesheet affects ONLY the conference banner and its publication link.
+   Keep the original style.css unchanged.
+   Printed QR: https://nadernemati.github.io/
 */
 
 .poster-access-banner {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 22px;
-    margin-top: 14px;
-    margin-bottom: 14px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    background: linear-gradient(115deg, #eef9fc 0%, #f7fbfc 100%);
-    border: 1px solid #abd2dc;
-    border-left: 5px solid #0d788f;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(13, 65, 82, 0.06);
+    gap: 30px;
+
+    /* A much more prominent banner without changing the site's grid width. */
+    min-height: 205px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-bottom: 24px;
+    padding-top: 34px;
+    padding-bottom: 34px;
+
+    background: linear-gradient(115deg, #e8f7fb 0%, #f5fbfd 100%);
+    border: 1px solid #a5ccd7;
+    border-left: 6px solid #0d788f;
+    border-radius: 10px;
+    box-shadow: 0 3px 14px rgba(13, 65, 82, 0.08);
 }
 
 .poster-access-copy {
@@ -25,20 +31,21 @@
 }
 
 .poster-access-eyebrow {
-    margin: 0 0 4px;
+    margin: 0 0 12px;
     color: #08758a;
-    font-size: 13px;
+    font-size: 16px;
+    line-height: 1.35;
     font-weight: 700;
     letter-spacing: 0.035em;
 }
 
-/* Override the site's generic italic h2 style inside this banner only. */
+/* Scoped to the conference banner; does not change any other h2 on the site. */
 .poster-access-banner h2.poster-access-heading {
-    margin: 0 0 6px;
+    margin: 0 0 14px;
     padding: 0;
     max-width: none;
     color: #173c58;
-    font-size: 22px;
+    font-size: 30px;
     font-weight: 700;
     font-style: normal;
     line-height: 1.2;
@@ -46,9 +53,9 @@
 
 .poster-access-summary {
     margin: 0;
-    font-size: 14px;
-    line-height: 1.4;
     color: #344d60;
+    font-size: 17px;
+    line-height: 1.55;
 }
 
 .poster-access-banner .poster-access-button {
@@ -56,15 +63,15 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
-    min-height: 44px;
-    padding: 10px 18px;
+    gap: 10px;
+    min-height: 62px;
     box-sizing: border-box;
+    padding: 15px 26px;
     background: #0b7187;
     border: 2px solid #0b7187;
-    border-radius: 6px;
-    color: white;
-    font-size: 16px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 19px;
     font-weight: 700;
     line-height: 1.2;
     text-align: center;
@@ -86,24 +93,47 @@
     outline-offset: 3px;
 }
 
-.pub-poster-link { margin: 7px 0; font-size: 14px; font-weight: 700; }
+/* Existing poster link in the publications section. */
+.pub-poster-link {
+    margin: 7px 0;
+    font-size: 14px;
+    font-weight: 700;
+}
+
 .pub-poster-link a { color: #086d80; }
 .pub-poster-link a:hover { color: #c85f00; }
 
-@media (max-width: 700px) {
+/* Prevent cramped text while retaining a side-by-side layout on tablets. */
+@media (max-width: 800px) {
+    .poster-access-banner {
+        gap: 20px;
+        padding-top: 26px;
+        padding-bottom: 26px;
+    }
+
+    .poster-access-banner h2.poster-access-heading { font-size: 25px; }
+    .poster-access-eyebrow { font-size: 14px; }
+    .poster-access-summary { font-size: 16px; }
+    .poster-access-banner .poster-access-button { font-size: 17px; padding: 13px 18px; }
+}
+
+/* Mobile: make the entire button easy to tap and keep the box spacious. */
+@media (max-width: 620px) {
     .poster-access-banner {
         flex-direction: column;
         align-items: stretch;
-        gap: 12px;
-        padding-top: 14px;
-        padding-bottom: 14px;
-        margin-top: 8px;
+        gap: 20px;
+        min-height: 0;
+        margin-top: 12px;
+        margin-bottom: 20px;
+        padding-top: 26px;
+        padding-bottom: 26px;
     }
 
-    .poster-access-banner h2.poster-access-heading { font-size: 19px; }
-    .poster-access-eyebrow { font-size: 12px; }
-    .poster-access-summary { font-size: 14px; }
-    .poster-access-banner .poster-access-button { width: 100%; }
+    .poster-access-banner h2.poster-access-heading { font-size: 24px; }
+    .poster-access-eyebrow { margin-bottom: 10px; font-size: 14px; }
+    .poster-access-summary { font-size: 16px; }
+    .poster-access-banner .poster-access-button { width: 100%; min-height: 58px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
