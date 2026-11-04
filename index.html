@@ -51,6 +51,69 @@
     <!-- Styles for the conference poster link shown at the top of the home page. -->
     <link rel="stylesheet" href="poster-banner.css">
 
+
+    <!-- Conference banner sizing: scoped inline so browser CSS cache cannot hide the change. -->
+    <style id="conference-poster-size-fix">
+        /* Override the generic .container's 970px desktop width ONLY for the conference box. */
+        section.poster-access-banner.container {
+            box-sizing: border-box;
+            width: calc(100% - 44px);
+            max-width: 1240px;
+            min-height: 310px;
+            margin: 24px auto 30px;
+            padding: 46px 52px;
+            gap: 38px;
+        }
+        section.poster-access-banner .poster-access-copy {
+            flex: 1 1 auto;
+            max-width: 790px;
+            min-width: 0;
+        }
+        section.poster-access-banner .poster-access-eyebrow {
+            font-size: 18px;
+            line-height: 1.35;
+            margin-bottom: 15px;
+        }
+        section.poster-access-banner h2.poster-access-heading {
+            max-width: none;
+            font-size: 36px;
+            line-height: 1.18;
+            margin-bottom: 18px;
+        }
+        section.poster-access-banner .poster-access-summary {
+            font-size: 19px;
+            line-height: 1.55;
+        }
+        section.poster-access-banner a.poster-access-button {
+            min-height: 72px;
+            padding: 18px 30px;
+            font-size: 21px;
+        }
+        @media (max-width: 900px) {
+            section.poster-access-banner.container {
+                min-height: 0;
+                padding: 30px 28px;
+                gap: 18px;
+            }
+            section.poster-access-banner h2.poster-access-heading { font-size: 28px; }
+            section.poster-access-banner .poster-access-summary { font-size: 16px; }
+            section.poster-access-banner .poster-access-eyebrow { font-size: 15px; }
+            section.poster-access-banner a.poster-access-button { min-height: 58px; font-size: 17px; padding: 13px 20px; }
+        }
+        @media (max-width: 620px) {
+            section.poster-access-banner.container {
+                width: calc(100% - 24px);
+                max-width: none;
+                flex-direction: column;
+                align-items: stretch;
+                padding: 28px 24px;
+                margin: 12px auto 20px;
+            }
+            section.poster-access-banner h2.poster-access-heading { font-size: 25px; }
+            section.poster-access-banner a.poster-access-button { width: 100%; }
+        }
+    </style>
+
 </head>
 
 
