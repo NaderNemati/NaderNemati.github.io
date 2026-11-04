@@ -112,6 +112,59 @@
             section.poster-access-banner h2.poster-access-heading { font-size: 25px; }
             section.poster-access-banner a.poster-access-button { width: 100%; }
         }
+
+        /* Two independent PDF links, limited to the conference box. */
+        section.poster-access-banner .poster-access-hint {
+            margin: 14px 0 0;
+            color: #4b6475;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        section.poster-access-banner .poster-access-actions {
+            display: flex;
+            flex: 0 0 290px;
+            flex-direction: column;
+            gap: 14px;
+            min-width: 0;
+        }
+        section.poster-access-banner .poster-access-actions a.poster-access-button {
+            width: 100%;
+            min-height: 76px;
+            padding: 16px 20px;
+            box-sizing: border-box;
+            font-size: 19px;
+            line-height: 1.25;
+            white-space: normal;
+        }
+        section.poster-access-banner .poster-access-actions a.poster-access-button--manuscript {
+            background-color: #1b506b;
+            border-color: #1b506b;
+            color: #fff;
+        }
+        section.poster-access-banner .poster-access-actions a.poster-access-button--manuscript:hover,
+        section.poster-access-banner .poster-access-actions a.poster-access-button--manuscript:focus-visible {
+            background-color: #103b51;
+            border-color: #103b51;
+            color: #fff;
+        }
+        section.poster-access-banner .poster-access-actions a.poster-access-button--poster {
+            background-color: #0b7187;
+            border-color: #0b7187;
+            color: #fff;
+        }
+        @media (max-width: 900px) {
+            section.poster-access-banner .poster-access-actions { flex-basis: 235px; gap: 12px; }
+            section.poster-access-banner .poster-access-actions a.poster-access-button {
+                font-size: 16px;
+                min-height: 62px;
+                padding: 12px 14px;
+            }
+            section.poster-access-banner .poster-access-hint { font-size: 14px; }
+        }
+        @media (max-width: 620px) {
+            section.poster-access-banner .poster-access-actions { width: 100%; flex-basis: auto; }
+            section.poster-access-banner .poster-access-actions a.poster-access-button { width: 100%; min-height: 60px; }
+        }
     </style>
 
 </head>
@@ -128,16 +181,26 @@
 <section class="poster-access-banner container" aria-labelledby="poster-access-heading">
     <div class="poster-access-copy">
         <p class="poster-access-eyebrow">IEEE NSS/MIC 2026 · Granada, Spain</p>
-        <h2 id="poster-access-heading" class="poster-access-heading">Conference poster available online</h2>
+        <h2 id="poster-access-heading" class="poster-access-heading">Conference materials available online</h2>
         <p class="poster-access-summary">Data-Driven Selection of Representative Motion Models for Simulation in Dynamic Cardiac PET</p>
+        <p class="poster-access-hint">Read the summary manuscript or view the conference poster.</p>
     </div>
-    <a class="poster-access-button"
-       href="https://users.utu.fi/ripekl/mic-2026-poster/"
-       target="_blank"
-       rel="noopener noreferrer"
-       aria-label="Open the MIC 2026 poster page at the University of Turku">
-        View poster <span aria-hidden="true">↗</span>
-    </a>
+    <div class="poster-access-actions" role="group" aria-label="Conference materials">
+        <a class="poster-access-button poster-access-button--manuscript"
+           href="https://users.utu.fi/ripekl/wp-content/uploads/sites/1227/2026/11/Data_Driven_Selection_of_Representative_Motion_Models_for_Simulation_in_Dynamic_Cardiac_PET-1.pdf"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Open the summary manuscript PDF">
+            Summary manuscript <span aria-hidden="true">↗</span>
+        </a>
+        <a class="poster-access-button poster-access-button--poster"
+           href="https://users.utu.fi/ripekl/wp-content/uploads/sites/1227/2026/11/MIC_Poster_edited.pdf"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Open the conference poster PDF">
+            Conference poster <span aria-hidden="true">↗</span>
+        </a>
+    </div>
 </section>
 
 
