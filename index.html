@@ -48,10 +48,35 @@
 
     </style>
 
+    <!-- Styles for the conference poster link shown at the top of the home page. -->
+    <link rel="stylesheet" href="poster-banner.css">
+
 </head>
 
 
 <body>
+
+<!-- =========================
+     CONFERENCE POSTER ACCESS
+     The existing printed QR code points to this homepage.
+     Keep this banner visible at the very top so visitors can
+     reach the university-hosted poster in one click.
+     ========================= -->
+<section class="poster-access-banner container" aria-labelledby="poster-access-heading">
+    <div class="poster-access-copy">
+        <p class="poster-access-eyebrow">IEEE NSS/MIC 2026 · Granada, Spain</p>
+        <h2 id="poster-access-heading" class="poster-access-heading">Conference poster available online</h2>
+        <p class="poster-access-summary">Data-Driven Selection of Representative Motion Models for Simulation in Dynamic Cardiac PET</p>
+    </div>
+    <a class="poster-access-button"
+       href="https://users.utu.fi/ripekl/mic-2026-poster/"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Open the MIC 2026 poster page at the University of Turku">
+        View poster <span aria-hidden="true">↗</span>
+    </a>
+</section>
+
 
 
 <!-- =========================
@@ -662,7 +687,7 @@
 
             <div class="card">
 
-                <a href="https://nssmic.ieee.org/2026/">
+                <a href="https://users.utu.fi/ripekl/mic-2026-poster/" target="_blank" rel="noopener noreferrer" title="View the MIC 2026 poster on the University of Turku website">
 
                     <div class="ccimg">
 
@@ -1052,6 +1077,13 @@
 
         </div>
 
+
+        <div class="pub-poster-link">
+            <a href="https://users.utu.fi/ripekl/mic-2026-poster/"
+               target="_blank" rel="noopener noreferrer">
+                View conference poster ↗
+            </a>
+        </div>
 
         <div class="pub-authors">
 
