@@ -195,6 +195,46 @@
         }
     </style>
 
+    <!-- Profile photo sizing and spacing: overrides style.css without changing other sections. -->
+    <style id="profile-photo-layout">
+        /* Desktop: enlarge the portrait and keep a comfortable gap from the biography. */
+        @media (min-width: 992px) {
+            #dhead #dpic {
+                padding-right: 28px;
+                box-sizing: border-box;
+            }
+            #dhead #dpic img.ppic {
+                width: 300px;
+                height: 300px;
+                max-width: 100%;
+            }
+            #dhead #ddesc {
+                padding-left: 35px;
+            }
+        }
+
+        /* Tablet and mobile: stack the portrait and text neatly. */
+        @media (max-width: 991px) {
+            #dhead #dpic img.ppic {
+                width: 275px;
+                height: 275px;
+                max-width: 80%;
+            }
+            #dhead #ddesc {
+                padding-top: 26px;
+            }
+        }
+
+        /* Small phones: fit the picture within the available width. */
+        @media (max-width: 420px) {
+            #dhead #dpic img.ppic {
+                width: min(75vw, 260px);
+                height: auto;
+                aspect-ratio: 1 / 1;
+            }
+        }
+    </style>
+
 </head>
 
 
